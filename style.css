@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
     list-style: none;
 }
+body{
+    background-color: black;
+    color: aliceblue;
+}
 
 header{
     position: fixed;
@@ -17,9 +21,10 @@ header{
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: black;
+    background-color: rgb(19, 19, 19);
+    border: 2px solid rgb(17, 161, 72);
     backdrop-filter: blur(8px);
-    color: white;
+    color: rgb(0, 39, 19);
     padding: 0.5rem 1.5rem;
     border-radius: 3rem;
     z-index: 1000;
@@ -27,7 +32,7 @@ header{
 }
 
 .logo{
-    color: white;
+    color: rgb(251, 251, 251);
     font-size: 1.3rem;
     font-weight: 600;
     text-wrap: nowrap;
@@ -42,7 +47,7 @@ header{
 }
 li a{
     position: relative;
-    color: white;
+    color: rgb(250, 246, 246);
     font-weight: 300;
 }
 li a::before{
@@ -52,9 +57,9 @@ li a::before{
     left: 0;
     height: 5px;
     top: 25px;
-    border-radius: 1rem;
+    border-radius: .5rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    background: linear-gradient(to right,rgba(10, 65, 7, 0.323),rgba(14, 203, 102, 0.351));
 }
 li a:hover::before{
     width: 100%;
@@ -65,15 +70,16 @@ li a:hover::before{
     border: none;
     font-weight: 500;
     font-size: 1rem;
-    color: white;
+    color: rgb(37, 10, 10);
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
+    background: linear-gradient(to right,rgb(10, 65, 7),rgb(14, 203, 102));
 }
 .visit-btn:hover{
-    background: linear-gradient(to right,rgb(255,0,255),rgb(0,157,255));
+    background: linear-gradient(to right,rgb(14, 203, 102),rgb(10, 65, 7));
     transform: scale(1.03);
+     color: rgb(255, 255, 255);
 }
 #menu-icon{
     font-size: 2rem;
@@ -96,10 +102,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
 }
 .about img{
-    width: 30vw;
-    border-radius: 80%;
+    width: 20vw;
+    border-radius: 10%;
    
 }   
 .info-box{
@@ -111,16 +118,19 @@ section{
     gap: 1.5rem;
 }
 .info-box h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     opacity: 0.8;
+    color: aliceblue;
 }
 .info-box h1{
-    font-size: 4rem;
+    
+    font-size: 2rem;
     font-weight: 600;
+    color: aliceblue;
 }   
 .info-box span{
-    background: linear-gradient(to right,rgb(255,0,255),rgb(0,157,255));
+    background: linear-gradient(to right,rgb(10, 65, 7),rgb(14, 203, 102));
     transform: scale(1.03);
     background-clip: text;
     color: transparent;
@@ -129,23 +139,30 @@ section{
 .btn-group{
     display: flex;
     gap: 1rem;
+    
 }
 .btn{
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
-    border: 2px solid black;
+    border: 2px solid rgb(11, 135, 75);
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
+    background-color: rgb(26, 26, 31);
+    color: rgb(244, 248, 248);
 }
 .btn:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 28, 28);
 }
 .socials{
     display: flex;
     gap: 2rem;
+    color: rgb(8, 119, 41);
+}
+.socials a{
+    color: inherit;
 }
 .socials i{
     font-size: 2.5rem;
@@ -158,9 +175,10 @@ section{
 
 .section-title{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 3rem;
+    color: aliceblue;
 }
 .exp-info{
     display: flex;
@@ -176,22 +194,23 @@ section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
+   align-items: center;
 }
 .grid-card{
-    border: 2px solid black;
+    border: 2px solid rgb(11, 166, 71);
     border-radius: 3rem;
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: left;
+    justify-content: center;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 .grid :hover{
     transform: scale(1.02);
-    background-color: black;
-    color: white;
+    background-color: rgba(235, 228, 228, 0.947);
+    color: rgb(3, 1, 1);
 }
 .grid-card i{
     font-size: 1.5rem;
@@ -200,18 +219,22 @@ section{
 .grid-card span{
     font-size: 1.5rem;
     font-weight: 500;
-    background: linear-gradient(to right,red, blue);
+    background: linear-gradient(to right,rgb(10, 65, 7),rgb(14, 203, 102));
     background-clip: text;
     color: transparent;
 }
 ::-webkit-scrollbar{
     width: 15px;
+    
 }
 ::-webkit-scrollbar-track{
-    background-color: rgb(13, 69, 76);
+    background-color: rgb(1, 4, 4);
+    border-left:1px solid rgb(5, 55, 16);
+    border-radius: 1rem;
 }
 ::-webkit-scrollbar-thumb{
-     background: linear-gradient(to bottom,red, blue);
+     background: linear-gradient(to bottom,rgb(10, 65, 7),rgb(14, 203, 102));
+     border-radius: 1rem;
 }
 
 .project-grid{
@@ -228,13 +251,13 @@ section{
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    border: 2px solid black;
+    border: 2px solid  rgb(17, 161, 72);
     border-radius: 2rem;
     transition: 0.2s ease-in-out;  
 }
 .project-card:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(199, 209, 205);
+    color: rgb(0, 0, 0);
     transform: translatey(-10px)scale(1.05);
 }
 .project-card img{
@@ -242,45 +265,65 @@ section{
     border-radius: 1rem;
 }
 .project-card:hover .btn{
-    border: 2px solid white;
-    color: white;
+    border: 3px solid black;
+    
 }
 .project-card:hover .btn:hover{
-    border: 2px solid blue;
-    background-color: white;
-    color: black;
+    border: 2px solid rgb(17, 161, 72);
+    background-color: rgb(231, 225, 225);
+}
+.project-card:has(.btn:hover){
+    background-color: black;
+    color: aliceblue;
 }
 .project-card h3{
     font-size: 2rem;
     font-weight: 500;
 }
+
+
+
 .input-box{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
     gap: 2rem;
     margin-top: 5rem;
+    width: min(98%, 760px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-box .btn{
+    width: clamp(220px, 48vw, 300px);
+    padding: 0.9rem 2.5rem;
 }
 .input-box input{
     border-radius: 3rem;
-    border: 2px solid black;
-    padding: 2rem 8rem;
-    font-size: 3rem;
+    border: 2px solid rgb(17, 161, 72);
+    padding: 0.75rem 2.5rem 0.75rem 5rem;
+    font-size: 1.7rem;
+    width: clamp(320px, 82vw, 620px);
+    max-width: 100%;
 }
 .input-box input::placeholder{
-    font-size: 3rem;
+    
+    font-style: italic;
+   
 }
 .input{
     position: relative;
+    width: 100%;
+    max-width: 620px;
 }
 .input i{
     position: absolute;
-    font-size: 4rem;
+    color: black;
+    font-size: 2.2rem;
     top: 50%;
-    left: 10px;
-    transform: translate(50%,-50%);
+    left: 1.4rem;
+    transform: translateY(-50%);
 }
 
 footer{
@@ -298,9 +341,10 @@ footer ul{
     display: flex;
     align-items: center;
     gap: 3rem;
+    color: white;
 }
 footer ul li a{
-    color: black;
+    color: white;
     font-weight: 600;
 }
 .copyright{
@@ -323,7 +367,7 @@ footer ul li a{
         padding: 2rem 5rem;
         font-size: 2.5rem;
     }
-    .input .input::placeholder{
+    .input-box input::placeholder{
         font-size: 2.5rem;
     }
     .input-box i{
@@ -345,12 +389,20 @@ footer ul li a{
     .about-container{
         flex-direction: column;
     }
+    .input-box{
+        width: min(95%, 720px);
+    }
+    .input{
+        max-width: 100%;
+    }
     .input-box input{
-        padding: 1rem 2rem;
-        font-size: 1.2rem;
+        padding: 0.75rem 1.8rem 0.75rem 4.5rem;
+        font-size: 1.15rem;
+        width: min(100%, 90vw);
+        max-width: 620px;
     }
     .input-box input::placeholder{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .input-box i{
         display: none;
@@ -365,7 +417,13 @@ footer ul li a{
 @media(max-width:600px){
     header #menu-icon{
         display: block;
+         color: white;
     }
+    header #menu-icon:hover{
+        color: rgb(17, 161, 72);
+        transform:scale(1.1);
+    }
+    
     .nav-links{
         position: absolute;
         top: 100%;
@@ -398,12 +456,12 @@ footer ul li a{
         width: 80vw;
     }
     .input-box input{
-        padding: 0.5rem 3rem;
+        padding: 0.6rem 2.5rem;
         width: 80%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .input-box input::placeholder{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     footer ul{
         gap: 1rem;

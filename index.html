@@ -29,7 +29,7 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn">Visit Github</button>
+        <button class="visit-btn" onclick="opengit()">Visit Github</button>
     </header>
 
     <section id="about" class="about">
@@ -43,13 +43,20 @@
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
+                    <div class="btn" onclick="download()">Download CV</div>
                     <div class="btn">Contact</div>
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/drzn8" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-darsan-b75446316" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_darsan.17" target="_blank" rel="noopener noreferrer">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -138,16 +145,16 @@
             <h2 class="section-title">Contact Me</h2>
 
             <div class="input">
-                <input type="text" placeholder="example@email.com">
+                <input id="message-input" type="text" placeholder="Message">
                 <i class="fa-regular fa-envelope"></i>
             </div>
             
-            <div class="btn">Submit</div>
+            <div class="btn" id="submit-btn">Submit</div>
         </div>
     </section>
 
     <footer>
-        <ul>
+        <ul class="last">
             <li>
                 <a href="#about">About</a>
             </li>
@@ -168,6 +175,7 @@
 
     </footer>
 
+   
     <script src="script.js"></script>
 </body>
 </html>
